@@ -5,7 +5,7 @@
 * Running Enhancements
 * Running ASR
 
-![GUI for Analysis](https://github.com/iitbdaplab/iitbtcsgui/blob/master/gui/s1/gui.png)
+![GUI for Analysis](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/analysis.png)
 
 ### Choosing multi-channel file
 
@@ -18,7 +18,7 @@ If you want to use some other multi-channel audio (not
 obtained from synthesis interface), these ensure that its a single file containing all the
 channels(any format is compatible).
 
-![Section 1 of the GUI](https://github.com/iitbdaplab/iitbtcsgui/blob/master/gui/s1/sec1.png)
+![Section 1 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec1.png)
 
 A button to plot a selected RIR is displayed which opens a new window similar to one
 shown in Figure 2.5. There is an option to play a particular channel of the file selected
@@ -36,7 +36,7 @@ channel file the same as that for input multi-channel files which is mentioned b
 is an option for running single-channel de-noising and can be toggled with a checkbox
 
 
-![Section 2 of the GUI](https://github.com/iitbdaplab/iitbtcsgui/blob/master/gui/s1/sec2.png)
+![Section 2 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec2.png)
 This is succeeded by single-channel dereverberation if it is enabled. For dereverbera-
 tion, we have used {WPE[9] and NMF}, appearing in the drop-down. You can also choose
 to play or decode each of the dereverberated channel.
