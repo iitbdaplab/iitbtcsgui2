@@ -73,6 +73,7 @@ The following toolkits are required:
 The following python packages are required:
 * Pytorch 1.0 or >1.0
 * Other: sys, scipy, librosa
+
 The folder from cloned https://github.com/iitbdaplab/iitbtcsgui2 is  to be placed in ’<Your kaldi path >/egs’ folder. The log of each
 stage is displayed in the ’log’ console window.
   
