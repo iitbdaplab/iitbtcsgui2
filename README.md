@@ -107,4 +107,4 @@ Here are the steps:
 ## Here is the placed by deafult where the files are stored
 * After de-noising, the enhanced file is stored at ```single_denoising/<method>/<filename>_CH{1/2/3/4}.wav for method={nmf,wiener}```
 * After dereverberation, the enhanced file is stored at ```single_dereverb/<method>/<filename>_CH{1/2/3/4}.wav for method={wpe,nmf}```
-* After Beamforming, the enhanced file is stored at ```out_beamform/<filename>_<method>.wav ```
+* After Beamforming, the enhanced file is stored at ```out_beamform/<filename>_<method>.wav for method={MVDR,DSB,GEV,MVDR_NN,MVDR_TA} ```
