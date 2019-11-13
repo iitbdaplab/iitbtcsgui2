@@ -37,8 +37,7 @@ is an option for running single-channel de-noising and can be toggled with a che
 
 
 ![Section 2 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec2.png)
-This is succeeded by single-channel dereverberation if it is enabled. For dereverbera-
-tion, we have used {WPE[9] and NMF}, appearing in the drop-down. You can also choose
+This is succeeded by single-channel dereverberation if it is enabled. For dereverberation, we have used {WPE[9] and NMF}, appearing in the drop-down. You can also choose
 to play or decode each of the dereverberated channel.
 
 This stage is followed by localization with GCC-{PHAT,SCOT} available as options.
@@ -48,6 +47,8 @@ NN-MVDR}.
 
 Finally, after beamforming, a single-channel enhanced file obtained can be
 played or decoded.
+
+Note that the if selected, the order of single channel enhacements is : Denoising all channels > Dereverberating all channels > Beamforming. 
 
 
 ### Running ASR
