@@ -73,15 +73,15 @@ The following toolkits are required:
 The following python packages are required:
 • Pytorch 1.0 or >1.0
 • Other: sys, scipy, librosa
-The folder from cloned https://github.com/iitbdaplab/iitbtcsgui is  to be placed in ’<Your kaldi path >/egs’ folder. The log of each
+The folder from cloned https://github.com/iitbdaplab/iitbtcsgui2 is  to be placed in ’<Your kaldi path >/egs’ folder. The log of each
 stage is displayed in the ’log’ console window.
   
 Here are the steps:
 
-1) Clone the repository from https://github.com/iitbdaplab/iitbtcsgui using
+1) Clone the repository from https://github.com/iitbdaplab/iitbtcsgui2 using
 
   ```
-   git clone https://github.com/iitbdaplab/iitbtcsgui
+   git clone https://github.com/iitbdaplab/iitbtcsgui2
   ```
 2) Run the following command on your unix machine to install required dependencies.
   ```
@@ -100,7 +100,7 @@ Here are the steps:
 
 ## Run the Program
  ```
- ./gui.py    # Runs using python2.7(version 2)
+ ./gui.py    # Runs using python3
  
 ```
 ## Here is the placed by deafult where the files are stored
