@@ -46,6 +46,9 @@ The button ’Show Diarization time stamps’ will show which speaker spoke and
 their start and end time. The bottom-most button show transcripts will show which
 speaker spoke with what in <speaker id: text >format.
   
+  
+The log of each stage is displayed in the ’log’ console window.  
+  
 ## Setup, Directory Structure and Other requirements
 
 Linux machine is required to run this task as most of the ASR models are being tested
@@ -55,20 +58,24 @@ The following toolkits are required:
 * Kaldi
 * Octave-dev,Octave-lib
 
-The following python packages are required:
-* Pytorch 1.0 or >1.0
-* Other: sys, scipy, librosa
+Other python based package requirements are specified in the requirements.txt file. Python3 is used for building the GUI, so install python3 and the dependencies to run the the GUI.
 
-The folder from cloned https://github.com/iitbdaplab/iitbtcsgui2 is  to be placed in ’<Your kaldi path >/egs’ folder. The log of each
-stage is displayed in the ’log’ console window.
+### Setting up the GUI
+
+The folder from cloned https://github.com/iitbdaplab/iitbtcsgui2 is to be placed in ```<Your kaldi path >/egs``` folder or if the ```.zip``` file is used, extract the folder to ```<Your kaldi path >/egs``` .
   
 Here are the steps:
 
 1) Clone the repository from https://github.com/iitbdaplab/iitbtcsgui2 using
 
   ```
-   git clone https://github.com/iitbdaplab/iitbtcsgui2
-  ```
+  git clone https://github.com/iitbdaplab/iitbtcsgui2                 (from github)
+  
+  Or 
+  
+  unzip <filename>.zip                                                (for zip file)
+ ```
+
 2) Run the following command on your unix machine to install required dependencies.
   ```
    chmod +x dependencies.sh
