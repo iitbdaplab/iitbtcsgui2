@@ -55,7 +55,7 @@ Linux machine is required to run this task as most of the ASR models are being t
 run on Linux machine.
 
 The following toolkits are required:
-* Kaldi
+* Kaldi ```https://github.com/kaldi-asr/kaldi/commit/53e33dc4b2c7ffa7d76bceff12ac7d08966820fd```
 * Octave-dev,Octave-lib
 
 Other python based package requirements are specified in the requirements.txt file. Python3 is used for building the GUI, so install python3 and the dependencies to run the the GUI.
