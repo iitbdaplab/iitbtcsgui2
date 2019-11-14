@@ -18,25 +18,20 @@ Also the GUI will allow you to play/ASR decode each channel. The single-channel 
 
 ### Running Enhancements
 
-Now this section of the interface follows the order. It starts with single-channel de-noising,
+Now this section of the interface follows an order. It starts with single-channel de-noising,
 single-channel dereverberation, DoA estimation and beamforming.
 Starting with single-channel de-noising, the drop-down list has two techniques namely:
-{Weiner and Spectral Subtraction}. You can similarly play and decode each single-
-channel file the same as that for input multi-channel files which is mentioned before. There
-is an option for running single-channel de-noising and can be toggled with a checkbox
+{Weiner and Spectral Subtraction}. You can  play and decode each single-
+channel denoised audio, same as that of input multi-channel files which is mentioned before. It has a checkbox, so if not nneded, it can be disabled. 
 
 
 ![Section 2 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec2.png)
-This is succeeded by single-channel dereverberation if it is enabled. For dereverberation, we have used {WPE[9] and NMF}, appearing in the drop-down. You can also choose
-to play or decode each of the dereverberated channel.
+This is succeeded by single-channel dereverberation with the similar options to play and decode each channel. For dereverberation, we have used {WPE and NMF} techniques. 
 
-This stage is followed by localization with GCC-{PHAT,SCOT} available as options.
-Beamforming using the TDOA estimates obtained from the localization( expect for Beam-
-formit Tool). Options available in Beamforming are: {DSB, GEV, MVDR, NN-GEV,
+This stage is followed by localization with GCC-{PHAT,SCOT} available as options. Beamforming using the TDOA estimates obtained from the localization( expect for Beamformit Tool). Options available in Beamforming are: {DSB, GEV, MVDR, NN-GEV,
 NN-MVDR}.
 
-Finally, after beamforming, a single-channel enhanced file obtained can be
-played or decoded.
+Finally, after beamforming, a single-channel enhanced file obtained can be played or decoded.
 
 Note that the if selected, the order of single channel enhacements is : Denoising all channels > Dereverberating all channels > Beamforming. 
 
