@@ -76,15 +76,17 @@ Here are the steps:
   unzip <filename>.zip                                                (for zip file)
  ```
 
+3) Copy the cloned/extarcted folder ```gui```  to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
+  ```
+   cp -r gui <Your path>/kaldi/egs/.
+  ```
+
 2) Run the following command on your unix machine to install required dependencies.
   ```
    chmod +x dependencies.sh
    ./dependencies.sh
   ```
-3) Copy the folder gui in the repository to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
-  ```
-   cp -r gui <Your path>/kaldi/egs/.
-  ```
+
 
 4) Change the directory to <Your path>/kaldi/egs/gui/s1
   ```
@@ -100,3 +102,11 @@ Here are the steps:
 * After de-noising, the enhanced file is stored at ```single_denoising/<method>/<filename>_CH{1/2/3/4}.wav for method={nmf,wiener}```
 * After dereverberation, the enhanced file is stored at ```single_dereverb/<method>/<filename>_CH{1/2/3/4}.wav for method={wpe,nmf}```
 * After Beamforming, the enhanced file is stored at ```out_beamform/<filename>_<method>.wav for method={MVDR,DSB,GEV,MVDR_NN,MVDR_TA} ```
+
+### You can change the acoustic and language model using the following steps below.
+The acoustic model is located at ```exp/model_typ`` ..for e.g. exp/tri1```
+The langauge model is located at ```data/lang```
+
+First step is to make a graph. YOu can do this using the ```mkgraph``` kaldi function. For e.g. 
+```utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph || exit 1;```
+Now the last step is to change the graph directory in ``decode_gui.sh`` script by changing the ```graph_dir``` to ```exp/tri1/graph```
