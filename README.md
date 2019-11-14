@@ -8,23 +8,13 @@
 ![GUI for Analysis](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/analysis.png)
 
 ### Choosing multi-channel file
+You can choose any multi-channel file of any format here. The multi-channel audio should be one file containing all the channels. After clicking the ’Browse’ button,a dialog box will open to choose the multi-channel file. Locate the multi-channel file you want to enhance and click 'Open'.
 
-
-The multi-channel file generated is generated using the synthesis interface is located in
-the multi-channel folder along with its ’rir’ config file. After clicking the ’Browse’ button,
-14a dialog box will open to choose the multi-channel file. Locate the multi-channel file you
-want to enhance and click open.
-If you want to use some other multi-channel audio (not
-obtained from synthesis interface), these ensure that its a single file containing all the
-channels(any format is compatible).
+After choosing, it will display the name of the file along with the path and also how many channels are present in the file.
+Also the GUI will allow you to play/ASR decode each channel. The single-channel audio is extracted and stored at ```single_channel/```. By deafult, it will open ```VLC``` media player to play and decoding will be done by the specified models (to setup own ASR model, steps are mentioned below) which will open a new window with the decoded hypothesis transcripts and the reference transcripts. 
 
 ![Section 1 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec1.png)
 
-A button to plot a selected RIR is displayed which opens a new window similar to one
-shown in Figure 2.5. There is an option to play a particular channel of the file selected
-which will open a media player (by default vlc, if installed). Another option is decoding
-can be done on one particular channel which opens a text output of the channel audio in
-e new window.
 
 ### Running Enhancements
 
