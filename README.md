@@ -76,9 +76,9 @@ Here are the steps:
   unzip <filename>.zip                                                (for zip file)
  ```
 
-3) Copy the cloned/extarcted folder ```gui```  to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
+3) Copy the cloned/extarcted folder ```gui2```  to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
   ```
-   cp -r gui <Your path>/kaldi/egs/.
+   cp -r gui2 <Your path>/kaldi/egs/.
   ```
 
 2) Run the following command on your unix machine to install required dependencies.
@@ -88,9 +88,9 @@ Here are the steps:
   ```
 
 
-4) Change the directory to <Your path>/kaldi/egs/gui/s1
+4) Change the directory to <Your path>/kaldi/egs/gui2/s1
   ```
-   cd <Your path>/kaldi/egs/gui/s1
+   cd <Your path>/kaldi/egs/gui2/s1
   ```
 
 ## Run the Program
