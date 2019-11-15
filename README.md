@@ -35,6 +35,7 @@ Finally, after beamforming, a single-channel enhanced file obtained can be playe
 
 Note that the if selected, the order of single channel enhacements is : Denoising all channels > Dereverberating all channels > Beamforming. 
 
+Each stage of enhacement can be decoded for each channel. It opens a new window to display the hypothesis transcripts and if the file for reference transcript exists then it will also be displayed. The file for reference transcripts should be in the same folder as that of the path of multi-channel audio with the extension of ```_ref.txt```
 
 ### Running ASR
 This stage is still under development. We plan to use the DoA values to identify the
