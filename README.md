@@ -77,21 +77,21 @@ Here are the steps:
   unzip <filename>.zip                                                (for zip file)
  ```
 
-3) Copy the cloned/extarcted folder ```gui2```  to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
+2) Copy the cloned/extarcted folder ```gui2```  to  ```<Your path >/kaldi/egs```   # where 'Your path' is whbere kaldi folder resides
   ```
    cp -r gui2 <Your path>/kaldi/egs/.
   ```
 
-2) Run the following command on your unix machine to install required dependencies.
+3) Change the directory to ```<Your path>/kaldi/egs/gui2/s1``` with : 
+```
+ cd <Your path>/kaldi/egs/gui2/s1
+```  
+ 
+4) Run the following command on your unix machine to install required dependencies.
+
   ```
    chmod +x requirements.sh
    ./requirements.sh
-  ```
-
-
-4) Change the directory to <Your path>/kaldi/egs/gui2/s1
-  ```
-   cd <Your path>/kaldi/egs/gui2/s1
   ```
 
 ## Run the Program
@@ -108,6 +108,11 @@ Here are the steps:
 The acoustic model is located at ```exp/model_typ`` ..for e.g. exp/tri1```
 The langauge model is located at ```data/lang```
 
-First step is to make a graph. YOu can do this using the ```mkgraph``` kaldi function. For e.g. 
-```utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph || exit 1;```
-Now the last step is to change the graph directory in ``decode_gui.sh`` script by changing the ```graph_dir``` to ```exp/tri1/graph```
+First step is to make a graph. Ou can do this using the ```mkgraph``` kaldi function. For e.g. 
+
+```utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph || exit 1;
+```
+
+If the graph is already built, than only modify the ``decode_gui.sh`` script by changing the ```graph_dir``` to ```exp/tri1/graph```  for example.
+
+Note: For running tdnn based models, the decoding kaldi receipe is a bit different. For e.g. for decoding using the aspire model, use ```aspire=true``` in decode_gui.sh script
