@@ -84,8 +84,8 @@ Here are the steps:
 
 2) Run the following command on your unix machine to install required dependencies.
   ```
-   chmod +x dependencies.sh
-   ./dependencies.sh
+   chmod +x requirements.sh
+   ./requirements.sh
   ```
 
 
