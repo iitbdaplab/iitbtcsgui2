@@ -28,10 +28,9 @@ channel denoised audio, same as that of input multi-channel files which is menti
 
 
 ![Section 2 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec2.png)
-This is succeeded by single-channel dereverberation with the similar options to play and decode each channel. For dereverberation, we have used {WPE and NMF} techniques. 
+This is succeeded by single-channel dereverberation with the similar options to play and decode each channel. For dereverberation, we have used {WPE and NMF} techniques. Here the WPE method is based on 'nara-wpe' python package. NMF here is Convolutive NMF method for single-channel reevrberation.
 
-This stage is followed by localization with GCC-{PHAT,SCOT} available as options. Beamforming using the TDOA estimates obtained from the localization( expect for Beamformit Tool). Options available in Beamforming are: {DSB, GEV, MVDR, NN-GEV,
-NN-MVDR}.
+This stage is followed by localization with GCC-{PHAT,SCOT} available as options, which are generalized cross correlation based techniques. Beamforming using the TDOA estimates obtained from the localization (expect for Beamformit Tool). Options available in Beamforming are: {DSB, GEV, MVDR, NN-GEV, NN-MVDR}. Here NN prefix means a neural network mask used for learning the co-variance matrix used for this adpative beamforming. 
 
 Finally, after beamforming, a single-channel enhanced file obtained can be played or decoded.
 
