@@ -15,6 +15,8 @@ Also the GUI will allow you to play/ASR decode each channel. The single-channel 
 
 ![Section 1 of the GUI](https://github.com/iitbdaplab/iitbtcsgui2/blob/master/sec1.png)
 
+Some sample multi-channel sample audio are given in ```multi_audio``` folder along with thier reference transcripts.
+
 
 ### Running Enhancements
 
